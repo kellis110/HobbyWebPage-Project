@@ -12,7 +12,7 @@
             text-align: center;
         }
         body{
-            background:#bbf9f9;
+            background: radial-gradient(circle at 10% 20%, rgb(239, 246, 249) 0%, rgb(206, 239, 253) 90%);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         img {
@@ -82,7 +82,7 @@
             border-radius:8px;
             object-fit: cover;
             aspect-ratio: 1.2;
-            transition:transform 1000ms ease-in-out, filter 200ms ease-in-out;
+            transition:transform 800ms ease-in-out, filter 200ms ease-in-out;
         }
         .main:hover{
             filter:contrast(65%);
@@ -105,11 +105,34 @@
         .image-gallery img:hover {
             transform:scale(2);
         }
+        .dark{
+            background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
+            color:white;
+        }
+        .dark .container{
+            background:rgba(255,255,255,0.2);
+        }
+        .dark a{
+            color:#bbf9f9
+        }
+        .dark .theme-button {
+            color:black;
+            background:white;
+            border:1px solid white;
+        }
+        .dark .theme-button:hover{
+            cursor:pointer;
+            background:rgba(255,255,255,0.2);
+            color:white;
+        }
+        .dark footer{
+            color:white;
+        }
         
     </style>
 </head>
 <body>
-    <button class="theme-button">Dark Theme</button>
+    <button class="theme-button">Change Theme</button>
 <div class="container">
     <h1>What is Painting? 🎨</h1>
     <h2>The best thing to do when it is cold outside</h2>
@@ -131,11 +154,36 @@
             <strong>Learn more from Eden Gallery</strong>
         </a>
     </div>
-    <button>Learn to Paint</button>
+    <button class="paint-button">Learn to Paint</button>
 </div>
     <footer>
         Coded by 
         <a href="https://www.linkedin.com/in/katie-e123/" target="_blank">Katie Ellis</a>
     </footer>
+    
+    
+    <script>
+        function changeTheme(){
+            let body=document.querySelector("body");
+           
+           if (body.classList.contains("dark")){
+            body.classList.remove("dark");
+           } else {
+            body.classList.add("dark");
+           }
+        }
+
+
+    let themeButton=document.querySelector(".theme-button");
+    themeButton.addEventListener("click", changeTheme);
+
+        function paintTutorial(){
+            window.open(href="https://stepbysteppainting.net/", "_blank");
+        }
+
+
+    let paintButton=document.querySelector(".paint-button");
+    paintButton.addEventListener("click", paintTutorial);
+    </script>
 </body>
 </html>
