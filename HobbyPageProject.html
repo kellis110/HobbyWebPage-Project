@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting💜My Hobby</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        body{
+            background:#bbf9f9;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        img {
+            max-width: 100%;
+        }
+        .container{
+            margin:20px auto;
+            max-width:800px;
+            padding:25px;
+            border-radius: 8px;
+            background: #FFFFFF;
+        }
+        p{
+            text-align: left;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+        .eden-gallery{
+            text-align: left;
+            padding-bottom:10px;
+        }
+        a{
+            color:#049b9b;
+        }
+        button {
+            display: block;
+            text-align: center;
+            border:1px solid #04acac;
+            border-radius: 30px;
+            background: #04acac;
+            margin: 0 auto;
+            padding:8px 10px;
+            color: white;
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            transition: all 200ms ease-in-out;
+        }
+        button:hover{
+            cursor: pointer;
+            background: white;
+            color:#04acac;
+        }
+        .theme-button{
+            color:#FFFFFF;
+            font-size: 12px;
+            padding:5px 8px;
+            border:1px solid black;
+            background: black;
+        }
+        .theme-button:hover{
+            cursor: pointer;
+            background:white;
+            color:black;
+        }
+        footer{
+            display: block;
+            text-align: center;
+            margin:10px 0;
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(63, 63, 63);
+            font-size: 14px;
+            font-weight:500;
+        }
+        .main{
+            display:blcok;
+            text-align: center;
+            border-radius:8px;
+            object-fit: cover;
+            aspect-ratio: 1.2;
+            transition:transform 1000ms ease-in-out, filter 200ms ease-in-out;
+        }
+        .main:hover{
+            filter:contrast(65%);
+            transform:scale(1.1);
+        }
+
+        .image-gallery{
+            display:grid;
+            grid-template-columns:repeat(4, 1fr);
+            grid-gap:20px;
+            margin:20px 0;
+        }
+        .image-gallery img {
+            width:100%;
+            border-radius: 8px;
+            transition:all 200ms ease-in-out;
+            object-fit: cover;
+            aspect-ratio: 1;
+        }
+        .image-gallery img:hover {
+            transform:scale(2);
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="theme-button">Dark Theme</button>
+<div class="container">
+    <h1>What is Painting? 🎨</h1>
+    <h2>The best thing to do when it is cold outside</h2>
+    <a href="https://en.wikipedia.org/wiki/Painting" target="_blank">
+        <img class="main" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/704/original/mcgill-library-y4PqRPqSako-unsplash.jpg?1708096751" alt="Image of painted birds">
+    </a>
+    <div class="image-gallery">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/705/original/rifqi-ali-ridho-VlXlW77swwY-unsplash.jpg?1708096767" alt="Image of person painting">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/706/original/rhondak-native-florida-folk-artist-_Yc7OtfFn-0-unsplash.jpg?1708096776" alt="Image of paint brushes">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/707/original/europeana-6c43FgRt0Dw-unsplash.jpg?1708096788" alt="Image of painted flowers">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/708/original/dushawn-jovic-5DLRReNddWw-unsplash.jpg?1708096796" alt="Image of woman painting">
+    </div>
+    <p>
+    Painting is the act or process of using paint. The paint can create an artwork known as a painting, or it can be used more practically as a protective coating or form of decoration. Paintings are a form of visual art that captures the expression of ideas and emotions on a two-dimensional surface.
+    </p>
+    <div class="eden-gallery">
+        📖
+        <a href="https://www.eden-gallery.com/news/what-is-painting">
+            <strong>Learn more from Eden Gallery</strong>
+        </a>
+    </div>
+    <button>Learn to Paint</button>
+</div>
+    <footer>
+        Coded by 
+        <a href="https://www.linkedin.com/in/katie-e123/" target="_blank">Katie Ellis</a>
+    </footer>
+</body>
+</html>
